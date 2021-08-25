@@ -1,8 +1,7 @@
 export interface ButtonProps {
-    text: string;
-    textColor: string;
+    label: string;
 }
 
-export default function Button({ text, textColor }: ButtonProps) {
-    return <button style={{ color: textColor }}>{text}</button>;
+export default function Button({ label}: ButtonProps) {
+    return <button>{label}</button>;
 }
